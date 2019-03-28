@@ -30,5 +30,18 @@ for i in range(5):
         else:
             print("  ", end="")
     print()
-
+"""
+打印倒立三角
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+i-for控制行号
+j-for控制列号
+"""
+for i in range(5):
+    for j in range(5-i):
+        print("* ", end="")
+    print()
 
