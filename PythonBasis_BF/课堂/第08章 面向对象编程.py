@@ -1,8 +1,9 @@
 import random
+
 class Game():
     version = 4.7
-    company = "腾讯游戏"
-    GameName = "超级玛丽"
+    company = "小游戏"
+    GameName = "猜数字"
     __Winner = []
 
     def __init__(self, name, phone):
@@ -25,6 +26,7 @@ class Game():
                 print("小了")
         print("{0}通关了游戏，共使用了{1}次。".format(self.name, count))
         Game.__Winner.append({"name": self.name, "count": count})
+
         # 设置类方法
         @classmethod
         def ShowWinner(cls):
@@ -34,6 +36,7 @@ class Game():
             for once in cls.__Winner:
                 print("第{0}名为{1}，成绩为{2}次".format(rank, once["name"], once["count"]))
                 rank += 1
+
         # 静态方法，不需要传类或者对象，一般用到工具类的时候，静态方法使用的比较多
         @staticmethod
         def GameHelp():  # 游戏帮助
