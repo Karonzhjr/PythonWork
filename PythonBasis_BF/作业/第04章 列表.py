@@ -31,7 +31,10 @@ for i in nameList:
 """
 nameList = ['李双红', '张三', '李四', '王五', 'Dan', 'Tina', 'Ben', '庄老师']
 for i in nameList:
-    if i == '李双红' or i == '庄老师':
-        continue
+    if i == '张三' or i == '王五':
+        print("{0}：同学，您好，由于我们群名额有限，所以暂时将您移除群，后期又问题可以直接与老师联系。".format(i))
+        nameList.remove(i)
     else:
-        print(nameList.pop())
+        continue
+print(nameList)   # 查看列表是否删除指定同学
+
