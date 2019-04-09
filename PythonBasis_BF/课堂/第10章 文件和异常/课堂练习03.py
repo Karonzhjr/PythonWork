@@ -13,9 +13,8 @@ while True:
             """
             # 疑问：guest.txt 与 files 是什么关系？名字写入到files中，为什么会传入guest.txt中呢？
             """
-            files.write(name)  # 把名字写入文件
-            files.write('\n')  # 写完后换行
-            files.seek(0)      # 重置指针到文件开头位置
+            files.write(name)       # 把名字写入文件
+            files.write('\n')       # 写完后换行
+            files.seek(0)           # 重置指针到文件开头位置
             content = files.read()  # 读文件内容
-            print(content)   # 打印内容
-
+            print(content)          # 打印内容
