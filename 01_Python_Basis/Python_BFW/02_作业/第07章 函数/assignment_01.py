@@ -2,6 +2,8 @@
 1、上机题
     定义一个函数，实现两个数四则运算，要注意有3个参数，分别是运算符和两个用于运算的数字。
 """
+
+
 def FourAri(num1, operator, num2):
     if operator == '+':
         result = num1 + num2    # 加法
